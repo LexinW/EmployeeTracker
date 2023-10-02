@@ -1,5 +1,11 @@
 # EmployeeTracker
 
+# LINKS:: 
+https://github.com/LexinW/EmployeeTracker
+
+VIDEO FOR THE DEMO: 
+https://drive.google.com/file/d/1jx7NCyz3I5UuIQdBFKypZfreYRJqADh1/view
+
 ## Your Task
 
 Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. Your assignment this week is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
@@ -97,6 +103,3 @@ Try to add some additional functionality to your application, such as the abilit
 * View the total utilized budget of a department&mdash;in other words, the combined salaries of all employees in that department.
 * 
 
-VIDEO FOR THE DEMO 
-
-https://drive.google.com/file/d/1jx7NCyz3I5UuIQdBFKypZfreYRJqADh1/view
