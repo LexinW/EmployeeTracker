@@ -46,10 +46,10 @@ async function mainMenu() {
       viewAllDepartments();
       break;
     case 'View all roles':
-      // Call a function to view all roles
+      viewAllRoles();
       break;
     case 'View all employees':
-      // Call a function to view all employees
+      viewAllEmployees();
       break;
     case 'Add a department':
       // Call a function to add a department
@@ -70,9 +70,31 @@ async function mainMenu() {
     default:
       console.log('Invalid choice');
   }
-}
+};
 function viewAllDepartments() {
   const query = 'SELECT * FROM department';
+  db.query(query, (err, results) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.table(results);
+    mainMenu();
+  });
+};
+function viewAllRoles() {
+  const query = 'SELECT * FROM role';
+  db.query(query, (err, results) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.table(results);
+    mainMenu();
+  });
+};
+function viewAllEmployees() {
+  const query = 'SELECT * FROM employee';
   db.query(query, (err, results) => {
     if (err) {
       console.error(err);
